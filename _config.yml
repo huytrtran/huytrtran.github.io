@@ -8,35 +8,90 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
+# Theme Settings
+#
+# Review documentation to determine if you should use `theme` or `remote_theme`
+# https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
+# theme                  : "minimal-mistakes-jekyll"
+remote_theme             : mmistakes/minimal-mistakes
+minimal_mistakes_skin    : default # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: MM
-email:
+locale: "en-US"
+title: "Huy T. Tran's Personal Website"
+title_separator: "|"
+subtitle: # site tagline that appears below site title in masthead
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-twitter_username: username
-github_username: username
-minimal_mistakes_skin: default
+url: # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl: # the subpath of your site, e.g. "/blog"
+repository: huytrtran/huytrtran.github.io  # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+logo: # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 search: true
 
-# Build settings
-markdown: kramdown
-remote_theme: mmistakes/minimal-mistakes
-# Outputting
-permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+# Social sharing
+# twitter_username: huy.tr.tran
+# github_username: huytrtran
 
+# Site author
+author:
+  name   : "Huy T. Tran"
+  avatar : "/assets/images/tran_huy170214-04-b.jpg"
+  bio    : "I love biking, skiing, and spending time with my family. I am passionate about advancing research on autonomy and artifical intelligence, and teaching students how computing can help them become better aerospace engineers."
+  googlescholar    : "http://yourfullgooglescholarurl.com"
+  links:
+    - label: "Research Group Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://tran.aerospace.illinois.edu"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:huytran1@illinois.edu"
+    - label: "Google Scholar"
+      icon: "fa fa-graduation-cap"
+      url: "https://scholar.google.com/citations?user=TgaPukcAAAAJ&hl=en"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/huytrtran"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/huytrtran"
+    # - label: "Instagram"
+    #   icon: "fab fa-fw fa-instagram"
+    #   url: "https://instagram.com/"
+
+# Site footer
+footer:
+  links:
+    - label: "Research"
+      icon: "fas fa-fw fa-link"
+      url: "https://tran.aerospace.illinois.edu"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:huytran1@illinois.edu"
+    - label: "Google Scholar"
+      icon: "fa fa-graduation-cap"
+      url: "https://scholar.google.com/citations?user=TgaPukcAAAAJ&hl=en"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/huytrtran"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/huytrtran"
+
+# Reading files
 include:
   - _pages
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
-# Exclude from processing.
+# Exclude from processing
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
 # exclude:
@@ -48,6 +103,15 @@ include:
 #   - vendor/gems/
 #   - vendor/ruby/
 
+# Conversion
+markdown: kramdown
+
+# Outputting
+permalink: /:categories/:title/
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
+timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
 # Plugins (previously gems:)
 plugins:
   - jekyll-paginate
@@ -57,36 +121,24 @@ plugins:
   - jemoji
   - jekyll-include-cache
 
-author:
-  name   : "First Lastname"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
-  links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+# Archives
+#  Type
+#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
+#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
+#  Path (examples)
+#  - Archive page should exist at path when using Liquid method or you can
+#    expect broken links (especially with breadcrumbs enabled)
+#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
+#  - <base_path>/categories/my-awesome-category/index.html ~> path: /categories/
+#  - <base_path>/my-awesome-category/index.html ~> path: /
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
 
-footer:
-  links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
-
+# Defaults
 defaults:
   # _posts
   - scope:
@@ -106,10 +158,3 @@ defaults:
     values:
       layout: single
       author_profile: true
-
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
