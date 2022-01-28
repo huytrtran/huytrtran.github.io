@@ -22,13 +22,11 @@ minimal_mistakes_skin    : default # "air", "aqua", "contrast", "dark", "dirt", 
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 locale: "en-US"
-title: "Huy T. Tran's Personal Website"
+name: "Huy T. Tran"
+title: ""
 title_separator: "|"
 subtitle: # site tagline that appears below site title in masthead
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+description: "Huy T. Tran's personal website"
 url: # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl: # the subpath of your site, e.g. "/blog"
 repository: huytrtran/huytrtran.github.io  # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -36,17 +34,15 @@ teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo: # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 search: true
 
-# Social sharing
-# twitter_username: huy.tr.tran
-# github_username: huytrtran
-
 # Site author
 author:
-  name   : "Huy T. Tran"
   avatar : "/assets/images/tran_huy170214-04-b.jpg"
-  bio    : "I love biking, skiing, and spending time with my family. I am passionate about advancing research on autonomy and artifical intelligence, and teaching students how computing can help them become better aerospace engineers."
-  googlescholar    : "http://yourfullgooglescholarurl.com"
+  # name   : "Huy T. Tran"
+  # bio    : "Assistant Professor in AE at the University of Illinois at Urbana-Champaign"
   links:
+    - label: "Urbana, IL"
+      icon: "fas fa-map-marker-alt"
+      url: "https://aerospace.illinois.edu/"
     - label: "Research Group Website"
       icon: "fas fa-fw fa-link"
       url: "https://tran.aerospace.illinois.edu"
@@ -108,8 +104,8 @@ markdown: kramdown
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
+# paginate: 5 # amount of posts to show
+# paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 # Plugins (previously gems:)
@@ -146,7 +142,7 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       read_time: true
       comments: true
       share: true
@@ -157,4 +153,5 @@ defaults:
       type: pages
     values:
       layout: single
-      author_profile: true
+      classes: wide
+      author_profile: false
