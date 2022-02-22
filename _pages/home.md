@@ -1,5 +1,5 @@
 ---
-title: "Huy T. Tran"
+title: ""
 layout: single
 author_profile: true
 permalink: /

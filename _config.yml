@@ -23,10 +23,10 @@ minimal_mistakes_skin    : default # "air", "aqua", "contrast", "dark", "dirt", 
 # in the templates via {{ site.myvariable }}.
 locale: "en-US"
 name: "Huy T. Tran"
-title: ""
-title_separator: "|"
+title: "Huy T. Tran's Personal Website"
+title_separator: ""
 subtitle: # site tagline that appears below site title in masthead
-description: "Huy T. Tran's personal website"
+description: # "Huy T. Tran's personal website"
 url: # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl: # the subpath of your site, e.g. "/blog"
 repository: huytrtran/huytrtran.github.io  # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"

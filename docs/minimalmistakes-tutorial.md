@@ -7,7 +7,9 @@
 <a name="creating"></a>
 ## Creating the website
 
-The following steps detail how to create a GitHub pages website using the [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) Jekyll theme. The steps in Option 1 are based on [this](http://varianceexplained.org/theme-setup/). The Minimal Mistakes guide suggests that installing as a remote theme (Option 2) is ["ideal for sites hosted with GitHub Pages"](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#remote-theme-method). More details can be found in the Minimal Mistakes [Quick-Start Guide](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/) and [Installation](https://mmistakes.github.io/minimal-mistakes/docs/installation/) instructions.
+The following steps detail how to create a GitHub pages website using the [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) Jekyll theme. The steps in Option 1 are based on [this guide](http://varianceexplained.org/theme-setup/). The Minimal Mistakes guide suggests that installing as a remote theme (Option 2) is ["ideal for sites hosted with GitHub Pages"](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#remote-theme-method). More details can be found in the Minimal Mistakes [Quick-Start Guide](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/) and [Installation](https://mmistakes.github.io/minimal-mistakes/docs/installation/) instructions.
+
+The [GitHub pages website](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll) also provides a nice tutorial for setting up a pages with Jekyll.
 
 ### Option 1: Forking the theme (untested).
 
