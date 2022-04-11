@@ -23,7 +23,7 @@ minimal_mistakes_skin    : default # "air", "aqua", "contrast", "dark", "dirt", 
 # in the templates via {{ site.myvariable }}.
 locale: "en-US"
 name: "Huy T. Tran"
-title: "Huy T. Tran's Personal Website"
+title: "Huy T. Tran"
 title_separator: ""
 subtitle: # site tagline that appears below site title in masthead
 description: # "Huy T. Tran's personal website"
@@ -58,6 +58,9 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/huytrtran"
+    - label: "Curriculum Vitae"
+      icon: "fas fa-fw fa-file-alt"
+      url: "/assets/pdfs/huy-cv.pdf"
     # - label: "Instagram"
     #   icon: "fab fa-fw fa-instagram"
     #   url: "https://instagram.com/"
