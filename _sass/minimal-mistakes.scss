@@ -1,0 +1,121 @@
+/*!
+ * Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+ * Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+ * Licensed under MIT (https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE)
+*/
+
+/* Variables */
+@import "minimal-mistakes/variables";
+
+/* Mixins and functions */
+@import "minimal-mistakes/vendor/breakpoint/breakpoint";
+@include breakpoint-set("to ems", true);
+@import "minimal-mistakes/vendor/magnific-popup/magnific-popup"; // Magnific Popup
+@import "minimal-mistakes/vendor/susy/susy";
+@import "minimal-mistakes/mixins";
+
+/* Core CSS */
+@import "minimal-mistakes/reset";
+@import "minimal-mistakes/base";
+@import "minimal-mistakes/forms";
+@import "minimal-mistakes/tables";
+@import "minimal-mistakes/animations";
+
+/* Components */
+@import "minimal-mistakes/buttons";
+@import "minimal-mistakes/notices";
+@import "minimal-mistakes/masthead";
+@import "minimal-mistakes/navigation";
+@import "minimal-mistakes/footer";
+@import "minimal-mistakes/search";
+@import "minimal-mistakes/syntax";
+
+/* Utility classes */
+@import "minimal-mistakes/utilities";
+
+/* Layout specific */
+@import "minimal-mistakes/page";
+@import "minimal-mistakes/archive";
+@import "minimal-mistakes/sidebar";
+@import "minimal-mistakes/print";
+
+/* Modifications to base minimal-mistakes theme */
+
+/* Colors */
+$uiuc-orange-color: #FF552E;
+$uiuc-blue-color: #13294B;
+$uiuc-altgeld-color: #DD3403;
+
+$h1-color: $dark-gray;
+$h2-color: $light-gray;
+$h3-color: $lighter-gray;
+$emphasis-color: $uiuc-orange-color;
+$muted-emphasis-color: $uiuc-blue-color;
+$light-emphasis-color: mix(#fff, $uiuc-orange-color, 50%);
+$light-muted-emphasis-color: mix(#fff, $uiuc-blue-color, 50%);
+
+// $text-color: $dark-gray !default;
+$text-color: $gray !default;
+
+/* Padding */
+$padding-medium: 1em;
+$padding-small: 0.5em;
+$padding-smaller: 0.25em;
+$padding-smallest: 0.125em;
+
+/* Figures */
+$figure-width: 500px;
+figure-full-caption {
+  display: -webkit-box;
+  display: flex;
+  flex-flow: column;  /* caption below image */
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 2em 0;
+
+  img,
+  iframe,
+  .fluid-width-video-wrapper {
+    margin-bottom: 1em;
+  }
+
+  img {
+    width: $figure-width;
+    border-radius: $border-radius;
+    -webkit-transition: $global-transition;
+    transition: $global-transition;
+  }
+
+  > a {
+    display: block;
+  }
+
+  &.half {
+    > a,
+    > img {
+      @include breakpoint($small) {
+        width: calc(50% - 0.5em);
+      }
+    }
+
+    figcaption {
+      width: 100%;
+    }
+  }
+
+  &.third {
+    > a,
+    > img {
+      @include breakpoint($small) {
+        width: calc(33.3333% - 0.5em);
+      }
+    }
+
+    figcaption {
+      width: 100%;
+    }
+  }
+}
