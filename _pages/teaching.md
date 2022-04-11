@@ -6,6 +6,8 @@ permalink: /teaching/
 
 # Teaching Philosophy
 
+Currently, my biggest passion in teaching is showing students the beauty of **computing** and how it can help them solve important engineering problems. I am especially motivated to introduce computing to students who have had limited exposure to it or may feel they don't have the skills or ability to get started.
+
 My current approach to teaching is structured around four principles:
 - Excite students by linking concepts with real-world engineering applications
 - Provide multiple learning settings that emphasize interaction and independent thinking
